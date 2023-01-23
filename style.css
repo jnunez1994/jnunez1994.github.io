@@ -1,0 +1,63 @@
+body {
+    background-color: #5BC0F8 ;
+    text-align: center;
+}
+
+#circle {
+    background: white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    
+    box-shadow: -3px 5px black;
+
+}
+
+#ig{
+    font-size: 14px;
+}
+
+#iconogmail{
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    
+}
+
+
+.icono{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    align-items: center;
+}
+
+#aboutme {
+    text-align: center;
+    
+}
+
+.botones{
+    border-top: solid 3px black;
+    padding: 5px;
+    width: 160px;
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+    box-shadow: -3px 5px black;
+    
+
+
+}
+
+#copy{
+    font-size: 10px;
+}
+
+footer{
+    margin-top: 60px;
+}
