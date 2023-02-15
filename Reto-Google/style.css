@@ -51,7 +51,41 @@ main .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 35px;
 
 }
 
+main .container .searcher-buttons{
+    gap: 8px;
+    display: flex;
+}
+main .container .searcher-buttons button{
+    /*border: none;
+    background-color: #303134;
+    padding: 0 16px;
+    color:  #e8eaed;
+    border-radius: 4px;*/
+    
+
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+main .container p{
+    color: rgba(255,255,255,0.87);
+    font-size: small;
+} 
 
