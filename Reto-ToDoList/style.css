@@ -1,0 +1,27 @@
+
+#user{
+    width: 30px;
+}
+
+body .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body .contenedor img{
+    width: 400px;
+}
+
+body .tareaNueva {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    padding-right: 140px;
+    
+}
+
+#nuevaT{
+    width:50px;
+   
+}
