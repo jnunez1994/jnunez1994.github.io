@@ -5,17 +5,76 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet">
-  <script src="script.js"></script>
 
-  <title>To Do List</title>
+
+  <title>Lista de tareas</title>
 </head>
 
 <body>
-  
+
+  <header>
+      <a><img src="img/menu.svg" class="logo"></a>
+      <h2>Lista de tareas</h2>
+      <a><img src="img/user.svg" class="logo"></a>
+  </header>
+
+  <div class="contenedorTareas">
+    <div></div>
+    <div id="contenedorLista">
+
+    </div>
+  </div>
+
+  <section>
+    <div>
+      <img src="img/mate.png" alt="">
+      <p>Sin tareas pendientes</p>
+      <p>¿tomamos unos mates?</p>
+    </div>
+  </section>
 
 
+<div class="favCon">
+  <img src="img/plus.svg" alt="" class="favButton">
+</div>
 
 
-  
+<section class="popup active">
+    <div class="popInner">
+      <div >
+        <h3>Ingresa un tarea</h3>
+        <button class="cerrarPop">X</button>
+      </div>
+      <form action="" id="datosTareas">
+        <label for="nombreTarea">Nombre de la tarea</label>
+        <input type="text" id="nombreTarea">
+
+        <label for="tipoTarea"> Tipo de tarea</label>
+          <select name="..." id="tipoTarea">
+            <option>Laboral</option> 
+            <option>Entretenimiento</option>
+            <option>Doméstica</option>
+            <option>Personal</option>
+          </select> 
+
+        <label for="descripcionTarea">Descripción:</label>
+        <input type="text" id="descripcionTarea">
+
+        <div id="prioridadTarea" class="prioridades">
+          <div id="cero" class="cero"></div>  
+          <div id="baja" class="baja"></div>
+          <div id="media" class="media"></div>
+          <div id="alta" class="alta"></div>
+        </div>
+        <div class="contBtn">
+            <button class="botones">Cancelar</button>
+            
+            <button id="addData" class="botones" >Agregar</button>
+        </div>
+      </form>
+    </div>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>

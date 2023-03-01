@@ -1,23 +1,22 @@
-let nombreT = document.getElementById("recipient-name")
-let tareaT= document.getElementById("tipos")
-let descripcionT= document.getElementById('message-text')
+//datos del modal
+let nombreT = document.getElementById("nombreTarea");
+let tipoT = document.getElementById("tipoTarea");
+let descripcionT = document.getElementById("descripcionTarea");
+//let prioridadT = ;
 
-let listaT= document.getElementById('tareasTodas')
+let listaT = document.getElementById("contenedorLista");
 
+//Botón agregar y función
+let add = document.getElementById("addData");
 
+add.addEventListener("click", () => {
 
-let addButton = document.getElementById('addData').addEventListener('click', function(){
-    let nuevaTarea = `<li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-        <div class="fw-bold">${nombreT.value} </div>
-        ${descripcionT.value}
-    </div>
-    <span class="badge bg-primary rounded-pill">14</span>
-</li> `
-    
-    
-    listaT.innerHTML += nuevaTarea
-    
+    let nuevaT = `<div class="lista">
+            <h1>${nombreT.value} (${tipoT.value})</h1>
+            
+            <p>${descripcionT.value}</p>
+                <div>`
+
+                listaT.innerHTML += nuevaT;
+
 })
-
-
