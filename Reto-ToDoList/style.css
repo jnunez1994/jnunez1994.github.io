@@ -29,22 +29,21 @@ header h2{
     padding:8px;
 }
 
-section {
+.Inicio {
     
-    height: calc(100vh - 100px);
+    /*height: calc(100vh - 200px);*/
     padding-top: 100px;
-}
-section div{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section div img{
+
+.Inicio img{
     height: 350px
 }
 
-section div p{
+.Inicio  p{
     margin: 0px;
     font-size: 18px;
     justify-content: center;
@@ -79,14 +78,21 @@ section div p{
 .contenedorTareas{
     display: flex;
     flex-direction: column;
-    margin: 25px;
+    width: 80vw;
+    height: 300px;
+    background-color:aqua;
+    margin:10vw
 }
+
+
 
 .lista{
     border: 1px solid black;
     color: black;
+    background-color: green;
     margin: 5px;
     padding:10px;
+    height: 60px;
 }
 
 
@@ -128,64 +134,10 @@ section div p{
     flex-direction: row;
     margin: 10px;
 }
-.cero{
-    border:1px solid grey;
-    background-color: grey;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    margin: 10px;
-}
-.baja{
-    border:1px solid green;
-    background-color: green;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    margin: 10px;
-}
-.media{
-    border:1px solid yellow;
-    background-color: yellow;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    margin: 10px;
-}
-.alta{
-    border:1px solid red;
-    background-color: red;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    margin: 10px;
-}
+
 
 .botones{
     border-radius: 10px;
     color: black;
     margin: 10px;
-}
-.modal form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid black;
-    padding: 10px;
-    width: 300px;
-    height: 400px;
-    }
-
-.modal form div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid red;
-    height: 30px;
-    width: 200px;
-}
-.modal .exitLogo{
-    width: 25px;
 }

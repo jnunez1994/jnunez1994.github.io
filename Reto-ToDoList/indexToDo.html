@@ -20,13 +20,19 @@
 
   
 
-  <section class="imgInicial">
-    <div>
+  
+    <div class="Inicio">
       <img src="img/mate.png" alt="">
       <p>Sin tareas pendientes</p>
       <p>¿tomamos unos mates?</p>
     </div>
-  </section>
+  
+
+
+  <div class="contenedorTareas" id="tareasT">
+    
+  </div>
+
 
 <section class="popup">
     <div class="popInner">
@@ -34,7 +40,7 @@
         <h3>Ingresa un tarea</h3>
         <button class="cerrarPop">X</button>
       </div>
-      <form action="" id="datosTareas">
+      <div  id="datosTareas">
         <label for="nombreTarea">Nombre de la tarea</label>
         <input type="text" id="nombreTarea">
 
@@ -49,27 +55,16 @@
         <label for="descripcionTarea">Descripción:</label>
         <input type="text" id="descripcionTarea">
 
-        <div id="prioridadTarea" class="prioridades">
-          <div id="cero" class="cero"></div>  
-          <div id="baja" class="baja"></div>
-          <div id="media" class="media"></div>
-          <div id="alta" class="alta"></div>
-        </div>
-        
-            <button class="cerrarPop">Cancelar</button>
+
+            <button class="botones" id="cerrar">Cerrar</button>
             
             <button id="addData" class="botones" >Agregar</button>
         
-      </form>
+        </div>
     </div>
 </section>
 
-<div class="contenedorTareas">
 
-  <ul id="contenedorLista">
-
-  </ul>
-</div>
 
 <button class="favButton"><span>+</span></button>
 <script src="script.js"></script>
