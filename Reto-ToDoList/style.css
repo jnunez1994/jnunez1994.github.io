@@ -8,7 +8,7 @@ header{
     display: flex;
     
     justify-content: space-between;
-    background-color: #7B1FA2;
+    background-color: #063c7a;
     height: 50px;
 }
 
@@ -55,35 +55,31 @@ section div p{
 
 
 
-
-
-
-
-
-.favCon {
-    
-    width: 40px;
-    border-radius: 50px;
-}
-
 .favButton{
     width: 40px;
+    height: 40px;
     border-radius: 50%;
+    font-size: 40px;
+    line-height: 0;
+    border: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: right;
-    background-color: #7B1FA2;
+    align-items: center;
+    justify-content: center;
+    background-color:  #063c7a;
 }
 
 .favButton:hover{
-    filter: invert(100);
+    color: white;
 }
+
 
 .contenedorTareas{
     display: flex;
     flex-direction: column;
     margin: 25px;
-
 }
 
 .lista{
@@ -95,21 +91,23 @@ section div p{
 
 
 .popup{
-    *display: none;
-    width: 90vw;
-    height: 80vh;
+    display: none;
+    width: 80vw;
+    height: 60vh;
     background-color: white;
     border-radius: 30px;
     border: 1px solid black;
-    margin: auto;
+    margin-top: 12vh;
+    margin-left: 10vw;
 
     position: absolute;
     z-index: 999;
-    
+    top: 0;
 }
 
 .popup.active{
     display: flex;
+    
 }
 
 .popInner{
@@ -163,9 +161,6 @@ section div p{
     margin: 10px;
 }
 
-.contBtn{
-    display: inline;
-}
 .botones{
     border-radius: 10px;
     color: black;

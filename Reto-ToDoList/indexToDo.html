@@ -18,14 +18,9 @@
       <a><img src="img/user.svg" class="logo"></a>
   </header>
 
-  <div class="contenedorTareas">
-    <div></div>
-    <div id="contenedorLista">
+  
 
-    </div>
-  </div>
-
-  <section>
+  <section class="imgInicial">
     <div>
       <img src="img/mate.png" alt="">
       <p>Sin tareas pendientes</p>
@@ -33,13 +28,7 @@
     </div>
   </section>
 
-
-<div class="favCon">
-  <img src="img/plus.svg" alt="" class="favButton">
-</div>
-
-
-<section class="popup active">
+<section class="popup">
     <div class="popInner">
       <div >
         <h3>Ingresa un tarea</h3>
@@ -66,15 +55,23 @@
           <div id="media" class="media"></div>
           <div id="alta" class="alta"></div>
         </div>
-        <div class="contBtn">
-            <button class="botones">Cancelar</button>
+        
+            <button class="cerrarPop">Cancelar</button>
             
             <button id="addData" class="botones" >Agregar</button>
-        </div>
+        
       </form>
     </div>
 </section>
 
+<div class="contenedorTareas">
+
+  <ul id="contenedorLista">
+
+  </ul>
+</div>
+
+<button class="favButton"><span>+</span></button>
 <script src="script.js"></script>
 </body>
 </html>
