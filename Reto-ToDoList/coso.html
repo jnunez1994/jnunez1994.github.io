@@ -7,16 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="contenedor"></div>
-    <input type="text" id="tit" />
-    <input type="text" id="txt" />
-    <button id="add">Add</button>
+    <div id="contenedor">
+        
+    </div><br><br><br>
+
+    <form action="#" id="form">
+        <label for="name">Nombre</label><br><br>
+        <input type="text" id="name" required><br><br><br>
+        <label for="txt">Descripcion</label><br><br>
+        <input type="text" id="txt" required>
+
+        <button type="submit" id="add">Agregar datos</button>
+
+    </form>
+    
 
     <script>
         let contenedor = document.getElementById("contenedor");
         let add = document.getElementById("add");
         let txt = document.getElementById("txt");
-        let tit = document.getElementById("tit");
+        let name = document.getElementById("name");
 
         add.addEventListener("click", () => {
             let modelo =`<div>
@@ -33,3 +43,34 @@
 </body>
 </html>
 
+
+<div>
+    <label for="nombreTarea">Nombre de la tarea</label>
+    <br>
+    <input type="text" id="nombreTarea" required><br>
+
+    <label for="tipoTarea"> Tipo de tarea</label>
+    <br>
+      <select name="..." id="tipoTarea" required>
+        <option>Laboral</option> 
+        <option>Entretenimiento</option>
+        <option>Doméstica</option>
+        <option>Personal</option>
+      </select> <br>
+
+    <label for="descripcionTarea">Descripción:</label>
+    <br>
+    <input type="text" id="descripcionTarea" required><br><br>
+      <label for="prioridades">Indica la prioridad</label><br>
+    <div id="prioridades">
+      <input type="radio">
+      <input type="radio">
+      <input type="radio">
+      <input type="radio">
+    </div>
+
+        <button class="botones" id="cerrar">Cerrar</button>
+        
+        <button id="addData" class="botones" >Agregar</button>
+    
+  </div>

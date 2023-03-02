@@ -11,6 +11,7 @@ let popup = document.querySelector('.popup')
 let listaT = document.getElementById("tareasT")
 
 //datos de los input
+let formulario = document.getElementById('form')
 let nombreT = document.getElementById("nombreTarea");
 let tipoT = document.getElementById("tipoTarea");
 let descripcionT = document.getElementById("descripcionTarea");
@@ -52,8 +53,10 @@ let addButton = document.getElementById('addData').addEventListener('click', fun
                 </div>`
                 
         listaT.innerHTML += nuevaT
+        
 
         popup.classList.remove('active')
         masBtn.disabled=false
+        document.getElementById("form")[0].value ="";
 })
 

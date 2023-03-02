@@ -23,8 +23,8 @@ header .logo:hover{
 
 header h2{
     margin: 0px;
-    display: flex;
-    justify-content: center;
+    /*display: flex;
+    justify-content: center;*/
     padding:8px;
 }
 
@@ -97,13 +97,13 @@ header h2{
 .popup{
     display: none;
     width: 80vw;
-    height: 60vh;
+    height: 80vh;
     background-color: white;
     border-radius: 30px;
     border: 1px solid black;
     margin-top: 12vh;
     margin-left: 10vw;
-
+    margin-right:10vw;
     position: absolute;
     z-index: 999;
     top: 0;
@@ -116,6 +116,8 @@ header h2{
 .popInner{
     display: flex;
     flex-direction: column;
+    
+    
     width: 100%;
     padding: 30px;
 }
@@ -123,7 +125,13 @@ header h2{
 .tituloDatos{
     display: flex;
     flex-direction:row;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+#form{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
 }
 
 .cerrarPop{
@@ -133,6 +141,10 @@ header h2{
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
 }
 .cerrarPop:hover{
     color: white;

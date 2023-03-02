@@ -18,7 +18,18 @@
       <a><img src="img/user.svg" class="logo"></a>
   </header>
 
-  
+  <!--FALTA:
+    -Arreglar botón +  ????
+    -Arreglar formulario
+    -Limpiar formulario
+    -Sacar la img de inicio al agregar la tabla
+    -Prioridades con los radio-buttons
+    -Color de las prioridades en la lista
+    -Iconos para los tipos de tarea
+    -Funcionalidad de eliminar tarea y su ícono
+    -Funcionalidad de tareas comletadas??
+
+  -->
 
   
     <div class="Inicio">
@@ -40,36 +51,38 @@
             <h3>Ingresa un tarea</h3>
             <button class="cerrarPop">X</button>
           </div>
-          
+          <div >
+          <form action="#" id="form" autocomplete="off">
             <label for="nombreTarea">Nombre de la tarea</label>
             <br>
-            <input type="text" id="nombreTarea"><br>
-
+            <input type="text" id="nombreTarea" required>
+            <br>
             <label for="tipoTarea"> Tipo de tarea</label>
             <br>
-              <select name="..." id="tipoTarea">
+              <select name="..." id="tipoTarea" required>
                 <option>Laboral</option> 
                 <option>Entretenimiento</option>
                 <option>Doméstica</option>
                 <option>Personal</option>
               </select> <br>
+              <label for="descripcionTarea">Descripción:</label>
+              <br>
+              <input type="text" id="descripcionTarea" required><br><br>
+                <!--<label for="prioridades">Indica la prioridad</label><br>
+              <div id="prioridades">
+                <input type="radio">
+                <input type="radio">
+                <input type="radio">
+                <input type="radio">
+              </div>-->
 
-            <label for="descripcionTarea">Descripción:</label>
-            <br>
-            <input type="text" id="descripcionTarea"><br>
-              <label for="prioridades">Indica la prioridad</label>
-            <div id="prioridades">
-              <input type="radio">
-              <input type="radio">
-              <input type="radio">
-              <input type="radio">
-            </div>
 
-                <button class="botones" id="cerrar">Cerrar</button>
-                
-                <button id="addData" class="botones" >Agregar</button>
-            
-          
+
+            <button class="botones" id="cerrar" >Cerrar</button>
+        
+            <button id="addData" class="botones" type="submit">Agregar</button>
+          </form>
+        </div>
     </div>
 </section>
 
