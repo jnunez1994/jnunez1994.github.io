@@ -10,15 +10,10 @@ let popup = document.querySelector('.popup')
 //contenedor de todas las tareas
 let listaT = document.getElementById("tareasT")
 
-//datos del form
-let formTareas = document.querySelector('#datosTareas')
-
+//datos de los input
 let nombreT = document.getElementById("nombreTarea");
 let tipoT = document.getElementById("tipoTarea");
 let descripcionT = document.getElementById("descripcionTarea");
-
-
-
 
 
 
@@ -45,8 +40,15 @@ cerrarBtn2.addEventListener('click',() => {
 
 let addButton = document.getElementById('addData').addEventListener('click', function(){
         
-    let nuevaT = `<div class="lista">
-                <h5>${nombreT.value}</h5>
+    let nuevaT = `<div >
+                <div> </div>
+
+                <div class="lista">
+                    <h2>${nombreT.value} (${tipoT.value})</h2>
+                    <p>${descripcionT.value}</p>
+                </div>
+                
+                <div> </div>
                 </div>`
                 
         listaT.innerHTML += nuevaT
