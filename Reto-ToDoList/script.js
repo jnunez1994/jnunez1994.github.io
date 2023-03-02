@@ -41,11 +41,6 @@ cerrarBtn2.addEventListener('click',() => {
 })
 
 
-
-
-
-
-
 //Botón agregar y función
 
 let addButton = document.getElementById('addData').addEventListener('click', function(){
@@ -57,7 +52,6 @@ let addButton = document.getElementById('addData').addEventListener('click', fun
         listaT.innerHTML += nuevaT
 
         popup.classList.remove('active')
-      
         masBtn.disabled=false
 })
 
